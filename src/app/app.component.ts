@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'DirectiveDemo';
+  // title = 'DirectiveDemo';
+  showSecret=false;
+  log:any=[]
+
+  onToggleDetails(){
+    this.showSecret =!this.showSecret;
+    this.log.push(this.log.length + 1)
+  }
 }
